@@ -1,0 +1,18 @@
+ Q->What will be the values of $a and $b after the code below is executed?
+Explain your answer.
+$a = '1';
+$b = &$a;
+$b = "2$b";
+
+Answer:
+the value of $a = '21'
+the value of $b = '21'
+
+REASON:
+The variable $a is assigned the string value '1'.
+
+The variable $b is assigned by reference to $a. This means that $b and $a are now references to the same memory location. Any change to $b will also affect $a, and vice versa.
+
+The expression "2$b" concatenates the string "2" with the current value of $b (which is '1'). Therefore, "2$b" becomes '21'.
+
+$b becomes '21', and since $b is a reference to $a, $a also becomes '21'
