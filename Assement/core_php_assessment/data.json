@@ -1,0 +1,16 @@
+{
+    "customers": {
+        "101": {
+            "name": "aarti",
+            "balance": 1800
+        },
+        "102": {
+            "name": "priti",
+            "balance": "4000"
+        },
+        "103": {
+            "name": "poonam",
+            "balance": "45000"
+        }
+    }
+}
