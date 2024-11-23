@@ -1,0 +1,4 @@
+• What Is Overloading?
+->Overloading
+
+    Definition: In PHP, overloading refers to dynamically creating properties and methods. PHP uses the magic methods __get(), __set(), __call(), etc., to achieve this.

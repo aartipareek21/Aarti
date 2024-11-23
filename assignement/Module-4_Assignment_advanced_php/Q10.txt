@@ -1,0 +1,2 @@
+• Are Parent Constructor Called Implicitly When Create An ObjectOf Class?
+->Parent constructors are not called implicitly. You must explicitly call them in the child constructor if needed.

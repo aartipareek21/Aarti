@@ -1,0 +1,4 @@
+• Use of The $this keyword
+->$this Keyword
+
+    Use: Refers to the current instance of the class.

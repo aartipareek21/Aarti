@@ -1,0 +1,12 @@
+• What are the differences between abstract classes and interfaces?
+->Abstract Class:
+
+    Can have abstract methods (without body) and concrete methods (with body).
+    Can include properties.
+    A class can extend only one abstract class.
+
+Interface:
+
+    Only method declarations without body.
+    Cannot have properties.
+    A class can implement multiple interfaces.

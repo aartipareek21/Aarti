@@ -1,0 +1,10 @@
+• Write PHP Script of Object Iteration?
+->class Example {
+    public $var1 = 'Value1';
+    public $var2 = 'Value2';
+    public $var3 = 'Value3';
+}
+$obj = new Example();
+foreach ($obj as $key => $value) {
+    echo "$key => $value\n";
+}

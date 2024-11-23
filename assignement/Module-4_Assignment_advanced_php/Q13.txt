@@ -1,0 +1,14 @@
+• Create multiple Traits and use it in to a single class?
+->trait Trait1 {
+    public function method1() {
+        echo "Method from Trait1";
+    }
+}
+trait Trait2 {
+    public function method2() {
+        echo "Method from Trait2";
+    }
+}
+class Example {
+    use Trait1, Trait2;
+}

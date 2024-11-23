@@ -1,0 +1,17 @@
+• Define Constructor and Destructor?
+->Constructor: A special method automatically called when an object is instantiated. It initializes object properties.
+
+class Example {
+    public function __construct() {
+        echo "Constructor called";
+    }
+}
+
+Destructor: A special method automatically called when an object is destroyed.
+
+    class Example {
+        public function __destruct() {
+            echo "Destructor called";
+        }
+    }
+

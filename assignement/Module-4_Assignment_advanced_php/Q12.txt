@@ -1,0 +1,15 @@
+• What are PHP Magic Methods/Functions? List them Write program for Static
+Keyword in PHP?
+->PHP Magic Methods
+
+    Definition: Special methods that start with __ (e.g., __construct(), __destruct(), __call(), __get(), __set(), __toString()).
+    Static Keyword Example:
+
+class Example {
+    public static $count = 0;
+    public static function increment() {
+        self::$count++;
+    }
+}
+Example::increment();
+echo Example::$count;

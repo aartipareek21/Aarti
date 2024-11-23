@@ -1,0 +1,8 @@
+• How to Load Classes in PHP?
+->Loading Classes in PHP
+
+    Autoloading: Using the spl_autoload_register() function to load classes automatically.
+
+spl_autoload_register(function($className) {
+    include $className . '.php';
+});

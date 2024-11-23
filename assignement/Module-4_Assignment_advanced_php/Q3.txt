@@ -1,0 +1,5 @@
+• What Is Difference Between Class And Interface?
+->Difference Between Class and Interface
+
+    Class: A blueprint for creating objects with attributes and methods. Supports inheritance and can be instantiated.
+    Interface: A contract that defines methods without implementing them. A class that implements an interface must provide the implementation.

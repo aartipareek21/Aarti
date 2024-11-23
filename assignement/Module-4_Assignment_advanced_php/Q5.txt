@@ -1,0 +1,15 @@
+• What Is T_PAAMAYIM_NEKUDOTAYIM (Scope Resolution Operator (::) with
+Example
+
+->Scope Resolution Operator (::)
+
+    Example: The :: operator allows access to static methods, properties, or constants from a class.
+
+class Example {
+    public static $staticProperty = "Static Value";
+    public static function staticMethod() {
+        echo "Static method called";
+    }
+}
+echo Example::$staticProperty; // Output: Static Value
+Example::staticMethod(); // Output: Static method called

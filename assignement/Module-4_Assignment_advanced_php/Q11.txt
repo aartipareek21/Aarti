@@ -1,0 +1,2 @@
+• What Happen, If Constructor Is Defined As Private Or Protected?
+->Behavior: If a constructor is private or protected, the class cannot be instantiated directly from outside. This is often used in singleton patterns.

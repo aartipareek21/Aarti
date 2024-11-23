@@ -1,0 +1,16 @@
+ How to Call Parent Constructor?
+ ->alling Parent Constructor
+
+    Method: Use parent::__construct() to call a parent class constructor from a child class.
+
+class ParentClass {
+    public function __construct() {
+        echo "Parent Constructor";
+    }
+}
+class ChildClass extends ParentClass {
+    public function __construct() {
+        parent::__construct();
+        echo "Child Constructor";
+    }
+} 
