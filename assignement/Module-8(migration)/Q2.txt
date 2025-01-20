@@ -1,0 +1,16 @@
+Q2->Call MySQLi Store Procedure from Laravel.
+Create a stored procedure in your MySQL database:
+
+DELIMITER $$
+CREATE PROCEDURE GetEmployeeDetails()
+BEGIN
+    SELECT * FROM employees;
+END $$
+DELIMITER ;
+
+Use Laravel’s database query builder or raw queries to call the stored procedure:
+
+$result = DB::select('CALL GetEmployeeDetails()');
+foreach ($result as $row) {
+    echo $row->name; // Example field
+}
