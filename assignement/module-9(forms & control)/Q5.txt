@@ -1,0 +1,10 @@
+Q5: Do Session for Employee Management System
+
+A:
+
+Start a Session and Store Employee Data:-
+session(['employee_name' => 'John Doe']);
+echo session('employee_name');
+
+Destroy Session:-
+session()->forget('employee_name');

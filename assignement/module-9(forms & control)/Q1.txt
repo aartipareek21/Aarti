@@ -1,0 +1,21 @@
+Q1: Explain ORM
+
+A: Object-Relational Mapping (ORM) is a technique used in software development to convert data between incompatible systems (object-oriented programming languages and relational databases). It abstracts database operations by mapping tables to classes and rows to objects.
+
+Why Use ORM?
+
+Simplifies database interactions
+
+Makes code more readable and maintainable
+
+Reduces SQL query complexity
+
+Protects against SQL injection
+
+Example in Laravel: Eloquent is Laravel’s default ORM, allowing developers to work with databases using an elegant syntax.
+
+$employee = new Employee();
+$employee->name = 'John Doe';
+$employee->email = 'john@example.com';
+$employee->position = 'Manager';
+$employee->save();

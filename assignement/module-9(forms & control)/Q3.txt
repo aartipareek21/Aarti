@@ -1,0 +1,30 @@
+Q3: Explain Eloquent Relationships
+
+A:
+
+One-to-One Relationship:-
+class Employee extends Model
+{
+    public function profile()
+    {
+        return $this->hasOne(Profile::class);
+    }
+}
+
+One-to-Many Relationship:-
+class Employee extends Model
+{
+    public function tasks()
+    {
+        return $this->hasMany(Task::class);
+    }
+}
+
+Many-to-Many Relationship:-
+class Employee extends Model
+{
+    public function projects()
+    {
+        return $this->belongsToMany(Project::class);
+    }
+}

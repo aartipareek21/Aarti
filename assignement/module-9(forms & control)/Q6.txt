@@ -1,0 +1,19 @@
+Q6: Do Pagination for Employee Management System
+
+A:
+
+Controller:
+
+public function index()
+{
+    $employees = Employee::paginate(5);
+    return view('employees.index', compact('employees'));
+}
+
+View:
+
+@foreach ($employees as $employee)
+    <p>{{ $employee->name }}</p>
+@endforeach
+
+{{ $employees->links() }}

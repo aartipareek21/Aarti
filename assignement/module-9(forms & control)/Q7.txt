@@ -1,0 +1,23 @@
+Q7: If New User Registered Put Notification on Admin Side in Employee Management
+
+A:
+
+Using Laravel Notifications:
+
+Create Notification:
+
+php artisan make:notification NewUserRegistered
+
+Define Notification Logic in ``:
+
+public function toMail($notifiable)
+{
+    return (new MailMessage)
+                ->subject('New User Registered')
+                ->line('A new user has registered on your platform.')
+                ->action('View Users', url('/admin/users'));
+}
+
+Send Notification:
+
+Notification::send($admin, new NewUserRegistered($user));

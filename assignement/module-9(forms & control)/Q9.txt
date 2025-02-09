@@ -1,0 +1,54 @@
+Q9: Create Application for Blog
+
+A:
+
+Create Migration for Blog Posts:
+
+php artisan make:migration create_posts_table
+
+Define Schema:
+
+Schema::create('posts', function (Blueprint $table) {
+    $table->id();
+    $table->string('title');
+    $table->text('content');
+    $table->timestamps();
+});
+
+Create Model:
+
+php artisan make:model Post
+
+Create Controller:
+
+php artisan make:controller PostController
+
+Define Routes in ``:
+
+Route::resource('posts', PostController::class);
+
+Controller Methods:
+
+public function index()
+{
+    $posts = Post::all();
+    return view('posts.index', compact('posts'));
+}
+
+public function store(Request $request)
+{
+    $post = new Post();
+    $post->title = $request->title;
+    $post->content = $request->content;
+    $post->save();
+
+    return redirect()->back()->with('success', 'Blog Post Created Successfully!');
+}
+
+Views: Create index.blade.php for displaying posts:
+
+@foreach ($posts as $post)
+    <h2>{{ $post->title }}</h2>
+    <p>{{ $post->content }}</p>
+@endforeach
+

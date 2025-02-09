@@ -1,0 +1,25 @@
+Q2: Do CRUD using Eloquent Query
+
+A:
+
+Create:-
+$employee = new Employee();
+$employee->name = 'Jane Smith';
+$employee->email = 'jane@example.com';
+$employee->position = 'Developer';
+$employee->save();
+
+Read:-
+$employees = Employee::all();
+foreach ($employees as $employee) {
+    echo $employee->name . "<br>";
+}
+
+Update:-
+$employee = Employee::find(1);
+$employee->position = 'Senior Developer';
+$employee->save();
+
+Delete:-
+$employee = Employee::find(1);
+$employee->delete();

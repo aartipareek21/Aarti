@@ -1,0 +1,14 @@
+Q4: What is Eager Loading and Lazy Loading?
+
+A:
+
+Eager Loading: Loads related data immediately to minimize database queries.
+
+$employees = Employee::with('department')->get();
+
+Lazy Loading: Loads related data only when accessed.
+
+$employees = Employee::all();
+foreach ($employees as $employee) {
+    echo $employee->department->name;
+}
