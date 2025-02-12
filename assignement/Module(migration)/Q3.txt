@@ -1,0 +1,26 @@
+Q3->Apply Curd Operation through Query Builder for Employee Management
+
+Create:
+
+DB::table('employees')->insert([
+    'name' => 'John Doe',
+    'position' => 'Manager',
+    'salary' => 50000
+]);
+
+Read:
+
+$employees = DB::table('employees')->get();
+foreach ($employees as $employee) {
+    echo $employee->name;
+}
+
+Update:
+
+DB::table('employees')
+    ->where('id', 1)
+    ->update(['position' => 'Senior Manager']);
+
+Delete:
+
+DB::table('employees')->where('id', 1)->delete();

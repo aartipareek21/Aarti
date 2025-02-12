@@ -1,0 +1,22 @@
+Q4->Create All Migration for Employee management
+
+Generate a migration file:
+
+php artisan make:migration create_employees_table
+
+Define the schema in the migration file (e.g., database/migrations/xxxx_xx_xx_create_employees_table.php):
+
+public function up()
+{
+    Schema::create('employees', function (Blueprint $table) {
+        $table->id();
+        $table->string('name');
+        $table->string('position');
+        $table->decimal('salary', 8, 2);
+        $table->timestamps();
+    });
+}
+
+Run the migration:
+
+php artisan migrate
