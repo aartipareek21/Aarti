@@ -1,240 +1,197 @@
 <?php
 include_once('header.php');
 ?>
-<div class="container-fluid page-header" style="margin-bottom: 90px;">
-        <div class="container">
-            <div class="d-flex flex-column justify-content-center" style="min-height: 300px">
-                <h3 class="display-4 text-white text-uppercase">About</h3>
-                <div class="d-inline-flex text-white">
-                    <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
-                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                    <p class="m-0 text-uppercase">About</p>
-                </div>
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - IT Knowledge Hub</title>
+    <meta name="description" content="Learn about IT Knowledge Hub, our mission, vision, and why we are the best platform for IT learning and development.">
+    <meta name="keywords" content="IT Knowledge Hub, IT learning, IT resources, programming, technology education">
+    <meta name="author" content="IT Knowledge Hub">
+    <style>
+        .login-section {
+/*            background: url('img/about4.jpg') no-repeat center center;*/
+            background-size: cover;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .section-title {
+            font-size: 3rem; /* Bigger font size */
+            color: #333;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .lead {
+            font-size: 1.5rem; /* Larger text for readability */
+            line-height: 1.8;
+            color: #555;
+            text-align: justify;
+            margin-bottom: 30px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 12px 24px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .team-member h4 {
+            margin-top: 1rem;
+            font-size: 1.5rem; /* Larger name font */
+            color: #333;
+        }
+
+        .team-member p {
+            font-size: 1.2rem; /* Larger role font */
+            color: #777;
+        }
+
+        .testimonial-carousel {
+            display: flex;
+            overflow-x: auto;
+            gap: 2rem;
+        }
+
+        .testimonial-carousel div {
+            min-width: 300px;
+            padding: 1.5rem;
+            background: #f9f9f9;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial-carousel img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid login-section">
+    <h1 style="font-size: 4rem;">About Us</h1> <!-- Larger font for About Us header -->
+</div>
+
+<!-- About Start -->
+<div class="container py-5">
+    <div class="text-center">
+        <h1 class="section-title">Welcome to IT Knowledge Hub</h1>
+        <p class="lead">Empowering Individuals with Knowledge and Skills to Succeed in the IT World</p>
+    </div>
+    <div class="row align-items-center mt-5">
+        <div class="col-lg-5">
+            <img class="img-fluid rounded" src="img/about.jpg" alt="About Us">
+        </div>
+        <div class="col-lg-7">
+            <h2 style="font-size: 2.5rem;">Our Mission</h2>
+            <p class="lead">At IT Knowledge Hub, our mission is to make learning IT accessible, enjoyable, and practical for everyone. Whether you are a beginner or a seasoned professional, our platform provides comprehensive resources to support your growth in the tech industry. We strive to foster a community of learners who are inspired to innovate and create.</p>
+            <a href="explore.php" class="btn btn-primary mt-3">Explore More</a>
         </div>
     </div>
-    <!-- About Start -->
-	<h1 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px; text-align: center;">About Us</h1>
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row align-items-center">
-                <div class="col-lg-5">
-                    <img class="img-fluid rounded mb-4 mb-lg-0" src="img/about.jpg" alt="">
-                </div>
-                <div class="col-lg-7">
-                    <div class="text-left mb-4">
-                        
-                        <h1>Our Mission</h1>
-                    </div>
-                <p class="lead">At IT Knowledge Hub, our mission is to provide accessible and comprehensive learning resources for anyone looking to start or advance their career in the IT field. From programming languages to career guidance, we’re here to support your journey in technology.</p>
+</div>
+<!-- About End -->
 
-                    <a href="" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Learn More</a>
-                </div>
-            </div>
+<!-- Vision Section -->
+<div class="container py-5">
+    <div class="row align-items-center">
+        <div class="col-lg-7">
+            <h2 style="font-size: 2.5rem;">Our Vision</h2>
+            <p class="lead">We envision a future where IT knowledge is universally accessible, helping individuals from all walks of life to embrace technology confidently. By equipping people with the right tools and guidance, we aim to build a community of innovators ready to shape the future of the digital world.</p>
+            <a href="community.php" class="btn btn-primary mt-3">Join Our Community</a>
+        </div>
+        <div class="col-lg-5">
+            <img class="img-fluid rounded" src="img/vision2.png" alt="Our Vision">
         </div>
     </div>
-    <!-- About End -->
-	
-	<div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row align-items-center">
-                
-                <div class="col-lg-7">
-                    <div class="text-left mb-4">
-                        
-                        <h1>Our Vision</h1>
-                    </div>
-<p class="lead">We envision a world where learning IT is easy, accessible, and enjoyable for everyone. Whether you're a beginner or transitioning into the tech field, we want to equip you with the knowledge and skills needed to thrive in the digital world.</p>
-                    <a href="" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Learn More</a>
-					
-                </div>
-				<div class="col-lg-5">
-                    <img class="img-fluid rounded mb-4 mb-lg-0" src="img/vision2.png" alt="">
-                </div>
-            </div>
+</div>
+
+<!-- Team Section -->
+<div class="container py-5 bg-light">
+    <div class="text-center">
+        <h2 class="section-title">Meet Our Team</h2>
+    </div>
+    <div class="row justify-content-center mt-5">
+        <div class="col-lg-3 text-center team-member">
+            <img src="img/team-1.jpg" alt="Team Member">
+            <h4>Alex Johnson</h4>
+            <p>Founder & CEO</p>
+        </div>
+        <div class="col-lg-3 text-center team-member">
+            <img src="img/team-2.jpg" alt="Team Member">
+            <h4>Emily Davis</h4>
+            <p>Chief Technology Officer</p>
+        </div>
+        <div class="col-lg-3 text-center team-member">
+            <img src="img/team-3.jpg" alt="Team Member">
+            <h4>Michael Smith</h4>
+            <p>Lead Educator</p>
         </div>
     </div>
-    <!-- About End -->
-	
+</div>
 
-
-    <!-- Registration Start -->
-    <div class="container-fluid bg-registration py-5" style="margin: 90px 0;">
-        <div class="container py-5">
-            <div class="row align-items-center">
-                <div class="col-lg-7 mb-5 mb-lg-0">
-                    <div class="mb-4">
-                        <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Need Any Courses</h5>
-                        <h1 class="text-white">30% Off For New Students</h1>
-                    </div>
-                    <p class="text-white">Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos,
-                        ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est
-                        dolor</p>
-                    <ul class="list-inline text-white m-0">
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Labore eos amet dolor amet diam</li>
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Etsea et sit dolor amet ipsum</li>
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Diam dolor diam elitripsum vero.</li>
-                    </ul>
-                </div>
-                <div class="col-lg-5">
-                    <div class="card border-0">
-                        <div class="card-header bg-light text-center p-4">
-                            <h1 class="m-0">Sign Up Now</h1>
-                        </div>
-                        <div class="card-body rounded-bottom bg-primary p-5">
-                            <form>
-                                <div class="form-group">
-                                    <input type="text" class="form-control border-0 p-4" placeholder="Your name" required="required" />
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control border-0 p-4" placeholder="Your email" required="required" />
-                                </div>
-                                <div class="form-group">
-                                    <select class="custom-select border-0 px-4" style="height: 47px;">
-                                        <option selected>Select a course</option>
-                                        <option value="1">Course 1</option>
-                                        <option value="2">Course 1</option>
-                                        <option value="3">Course 1</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <button class="btn btn-dark btn-block border-0 py-3" type="submit">Sign Up Now</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- Testimonials Section -->
+<div class="container py-5">
+    <div class="text-center">
+        <h2 class="section-title">What Our Students Say</h2>
+    </div>
+    <div class="testimonial-carousel mt-5">
+        <div>
+            <i class="fa fa-quote-left text-primary mb-4"></i>
+            <p>"The resources at IT Knowledge Hub are top-notch. I transitioned into IT with ease and confidence!"</p>
+            <img src="img/testimonial-1.jpg" alt="Student Testimonial">
+            <h5>John Doe</h5>
+            <span>Software Developer</span>
+        </div>
+        <div>
+            <i class="fa fa-quote-left text-primary mb-4"></i>
+            <p>"A fantastic platform that helped me learn programming from scratch. Highly recommend!"</p>
+            <img src="img/testimonial-2.jpg" alt="Student Testimonial">
+            <h5>Jane Smith</h5>
+            <span>Web Designer</span>
+        </div>
+        <div>
+            <i class="fa fa-quote-left text-primary mb-4"></i>
+            <p>"IT Knowledge Hub's resources are easy to follow and very practical. Perfect for beginners!"</p>
+            <img src="img/testimonial-3.jpg" alt="Student Testimonial">
+            <h5>Robert Brown</h5>
+            <span>Data Analyst</span>
         </div>
     </div>
-    <!-- Registration End -->
+</div>
 
+<!-- Call to Action -->
+<div class="container-fluid bg-primary py-5 text-white text-center">
+    <h2>Start Your IT Journey Today!</h2>
+    <p>Join thousands of learners who have transformed their careers with IT Knowledge Hub. Sign up now and unlock your potential!</p>
+    <a href="signup.php" class="btn btn-dark btn-lg mt-3">Get Started</a>
+</div>
 
-    <!-- Testimonial Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="text-center mb-5">
-                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Testimonial</h5>
-                <h1>What Say Our Students</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
-                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-1.jpg" alt="">
-                            <h5 class="m-0">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
-                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-2.jpg" alt="">
-                            <h5 class="m-0">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
-                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-3.jpg" alt="">
-                            <h5 class="m-0">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
-        <div class="row pt-5">
-            <div class="col-lg-7 col-md-12">
-                <div class="row">
-                    <div class="col-md-6 mb-5">
-                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Get In Touch</h5>
-                        <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                        <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
-                        <div class="d-flex justify-content-start mt-4">
-                            <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-outline-light btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-5">
-                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Our Courses</h5>
-                        <div class="d-flex flex-column justify-content-start">
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Web Design</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Apps Design</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Marketing</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Research</a>
-                            <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>SEO</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-5 col-md-12 mb-5">
-                <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Newsletter</h5>
-                <p>Rebum labore lorem dolores kasd est, et ipsum amet et at kasd, ipsum sea tempor magna tempor. Accu kasd sed ea duo ipsum. Dolor duo eirmod sea justo no lorem est diam</p>
-                <div class="w-100">
-                    <div class="input-group">
-                        <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Your Email Address">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary px-4">Sign Up</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
-        <div class="row">
-            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0 text-white">&copy; <a href="#">Domain Name</a>. All Rights Reserved. Designed by <a href="https://htmlcodex.com">html Codex</a>
-                </p>
-            </div>
-            <div class="col-lg-6 text-center text-md-right">
-                <ul class="nav d-inline-flex">
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">Privacy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">Terms</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">FAQs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">Help</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-</body>
-
-</html>
+<?php
+include_once('footer.php');
+?>

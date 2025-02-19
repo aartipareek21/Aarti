@@ -30,6 +30,7 @@ include_once('header.php');
                     <th>category id</th>
                     <th>Category Name</th>
                     <th>Description</th>
+					<th>image</th>
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -45,8 +46,9 @@ include_once('header.php');
                     <td><?php echo $data->description?></td>
                     <td><img src="upload/categories/<?php echo $data->img?>" width="50px"/></td>
                     <td>
-                        <a href="#" class="btn btn-info btn-sm">Edit</a>
-                        <a href="#" class="btn btn-danger btn-sm">Delete</a>
+					     <a href="edit_category?editbtn=<?php echo $data->category_id?>" class="btn btn-primary">Edit</a>
+                        <a href="delete?del_categories=<?php echo $data->category_id?>" class="btn btn-danger">Delete</a>
+                        
                     </td>
                 </tr>
                

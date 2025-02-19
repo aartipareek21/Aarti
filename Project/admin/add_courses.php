@@ -17,7 +17,7 @@ include_once('header.php');
           </ol>
 <div class="container mt-5">
     <h2>Add Course</h2>
-    <form action="" method="POST">
+    <form method="POST" enctype="multipart/form-data">
         <div class="form-group">
             <label for="course_name">Course Name:</label>
             <input type="text" id="course_name" name="course_name" class="form-control" required>
@@ -43,6 +43,10 @@ include_once('header.php');
             <textarea id="description" name="description" class="form-control" rows="3" required></textarea>
         </div>
         
+          <div class="form-group">
+            <label for="img">Image:</label>
+            <input type="file" name="img" class="form-control" required>
+          </div>
         <button type="submit" name="submit" class="btn btn-primary">Add Course</button>
     </form>
 </div>

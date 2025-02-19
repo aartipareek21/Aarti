@@ -1,3 +1,5 @@
+
+
 <?php
     include_once('header.php');
 ?>
@@ -7,76 +9,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Course Content</title>
-  
 </head>
 <body>
-    <body>
-        <form method="POST" action="">
-     <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
+    <div class="content-wrapper">
+        <!-- Page Header -->
         <section class="content-header">
-          <h1>
-            Add Categories
-            <small>Add Categories</small>
-          </h1>
-          <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="#">Categories</a></li>
-            <li class="active">Add Categories</li>
-          </ol>
-    <div class="container mt-5">
-        <h2 class="text-center">Add Course Content</h2>
-        <form action="/admin/course_content/add" method="POST" enctype="multipart/form-data">
-            <!-- Course ID -->
-             <div class="form-group">
-                      <label>Select Categories</label>
-                      <select name="course_id" class="form-control">
+            <h1>Add Categories</h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li class="active">Add Categories</li>
+            </ol>
+        </section>
+
+        <!-- Add Course Content Form -->
+        <div class="container mt-5">
+            <h2 class="text-center">Add Course Content</h2>
+            <form method="POST" enctype="multipart/form-data">
+                <!-- Select Categories -->
+                <div class="form-group">
+                    <label>Select Categories</label>
+                    <select name="course_id" class="form-control" required>
                         <option value="">Select Categories</option>
                         <?php 
-                        foreach($courses_arr as $data)
-                        {
-                            ?>
-                            <option value="<?php echo $data->course_id?>"><?php echo $data->course_name?></option>
-                            <?php
+                        foreach($courses_arr as $data) {
+                            echo "<option value='{$data->course_id}'>{$data->course_name}</option>";
                         }
                         ?>
-                      </select>
-                    </div>
-            
-            <!-- Content Title -->
-            <div class="form-group">
-                <label for="content_title">Content Title:</label>
-                <input type="text" id="content_title" name="content_title" class="form-control" required>
-            </div>
-            
-            <!-- Content Description -->
-            <div class="form-group">
-                <label for="content_description">Content Description:</label>
-                <textarea id="content_description" name="content_description" class="form-control" rows="4" required></textarea>
-            </div>
-            
-            <!-- Content File Upload -->
-            <div class="form-group">
-                <label for="content_file">Upload Content File:</label>
-                <input type="file" id="content_file" name="content_file" class="form-control-file" required>
-            </div>
-            
-            <!-- Submit Button -->
-            <button type="submit" name="submit" class="btn btn-primary">Add Content</button>
-        </form>
+                    </select>
+                </div>
+
+                <!-- Content Title -->
+                <div class="form-group">
+                    <label for="content_title">Content Title</label>
+                    <input type="text" id="content_title" name="content_title" class="form-control" required>
+                </div>
+
+                <!-- Content Description -->
+                <div class="form-group">
+                    <label for="content_description">Content Description</label>
+                    <textarea id="content_description" name="content_description" class="form-control" rows="4" required></textarea>
+                </div>
+
+                <!-- Syntax -->
+                <div class="form-group">
+                    <label for="syntax">Syntax</label>
+                    <textarea id="syntax" name="syntax" class="form-control" rows="4"></textarea>
+                </div>
+
+                <!-- Example Code -->
+                <div class="form-group">
+                    <label for="example_code">Example Code</label>
+                    <textarea id="example_code" name="example_code" class="form-control" rows="6"></textarea>
+                </div>
+
+                <!-- Detailed Information -->
+                <div class="form-group">
+                    <label for="detailed_info">Detailed Information</label>
+                    <textarea id="detailed_info" name="detailed_info" class="form-control" rows="8"></textarea>
+                </div>
+
+                <!-- Market Demand -->
+                <div class="form-group">
+                    <label for="Market_Demand">Market Demand</label>
+                    <textarea id="Market_Demand" name="Market_Demand" class="form-control" rows="8"></textarea>
+                </div>
+
+                <!-- Career Opportunities -->
+                <div class="form-group">
+                    <label for="Career_Opportunities">Career Opportunities</label>
+                    <textarea id="Career_Opportunities" name="Career_Opportunities" class="form-control" rows="8"></textarea>
+                </div>
+
+                <!-- Image Upload -->
+                <div class="form-group">
+                    <label for="img">Image:</label>
+                    <input type="file" name="img" class="form-control" required>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" name="submit" class="btn btn-primary">Add Content</button>
+            </form>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</section>
-</div>
-</form>
 </body>
 </html>
-</section>
-</div>
 <?php
-include_once('footer.php');
+    include_once('footer.php');
 ?>
-

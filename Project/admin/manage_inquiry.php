@@ -26,15 +26,13 @@
         <h2 class="text-center">Interview Questions</h2>
         <table class="table table-bordered table-striped">
             <thead class="thead-dark">
-                <tr>
-                    <th scope="col">inquiry_id</th>
-                    <th scope="col">name</th>
-                    <th scope="col">email </th>
-                    <th scope="col">course_id </th>
-                    <th scope="col">message </th>
-                    <th scope="col">inquiry_date </th>
-                    <th scope="col">Actions</th>
-                </tr>
+               <tr>
+                <th scope="col">Contact ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Message</th>
+                <th scope="col">Contact Date</th>
+            </tr>
             </thead>
             <tbody>
                 <!-- Example row 1 -->
@@ -44,16 +42,14 @@
                     ?>
                 
                 <tr>
-                    <td><?php echo $data->inquiry_id ?></td>
+                    <td><?php echo $data->contact_id ?></td>
                     <td><?php echo $data->name ?></td>
                     <td><?php echo $data->email ?></td>
-                    <td><?php echo $data->course_id ?></td>
                     <td><?php echo $data->message ?></td>
-                    <td><?php echo $data->inquiry_date ?></td>
+                    <td><?php echo $data->contact_date ?></td>
                     
                     <td>
-                        <a href="/admin/questions/edit/1" class="btn btn-warning btn-sm">Edit</a>
-                        <a href="/admin/questions/delete/1" class="btn btn-danger btn-sm">Delete</a>
+                        <a href="delete?del_contact_us=<?php echo $data->contact_id ?>" class="btn btn-danger btn-sm">Delete</a>
                     </td>
                 </tr>
               

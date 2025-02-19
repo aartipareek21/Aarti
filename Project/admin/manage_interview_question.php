@@ -30,6 +30,12 @@
                     <th scope="col">Question ID</th>
                     <th scope="col">Course ID</th>
                     <th scope="col">Question PDF</th>
+					<th scope="col">Category</th>
+                    <th scope="col">Question</th>
+                    <th scope="col">Answer</th>
+                    <th scope="col">Difficulty</th>
+                    <th scope="col">Company Specific</th>
+					<th scope="col">Mock Test Available</th>
                     <th scope="col">Actions</th>
                 </tr>
             </thead>
@@ -44,9 +50,15 @@
                     <td><?php echo $data->question_id ?></td>
                     <td><?php echo $data->course_id ?></td>
                     <td><a href="uploads/questions/html_questions.pdf" target="_blank"><?php echo $data->question_pdf ?></a></td>
+					<td><?php echo $data->category ?></td>
+                    <td><?php echo $data->question ?></td>
+                    <td><?php echo $data->answer ?></td>
+                    <td><?php echo $data->difficulty ?></td>
+                    <td><?php echo $data->company_specific ?></td>
+                    <td><?php echo $data->mock_test_available ?></td>	
                     <td>
-                        <a href="/admin/questions/edit/1" class="btn btn-warning btn-sm">Edit</a>
-                        <a href="/admin/questions/delete/1" class="btn btn-danger btn-sm">Delete</a>
+                        <a href="edit_questions?editbtn=<?php echo $data->question_id?>" class="btn btn-primary">Edit</a>    
+                       <a href="delete?del_interview=<?php echo $data->question_id ?>" class="btn btn-danger">Delete</a>
                     </td>
                 </tr>
               

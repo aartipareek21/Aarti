@@ -32,7 +32,12 @@
                     <th scope="col">Course ID</th>
                     <th scope="col">Content Title</th>
                     <th scope="col">Content Description</th>
-                    <th scope="col">Content File</th>
+                    <th scope="col">Syntax</th>
+					<th scope="col">Example</th>
+					<th scope="col">Detail information</th>
+					<th scope="col">Market Demand</th>
+					<th scope="col">Career_Opportunities</th>
+					<th scope="col"> img</th>
                     <th scope="col">Actions</th>
                 </tr>
             </thead>
@@ -47,10 +52,17 @@
                     <td><?php echo $data->course_id ?></td>
                     <td><?php echo $data->content_title ?></td>
                     <td><?php echo $data->content_description ?></td>
-                    <td><a href="/uploads/content/html_basics.pdf" target="_blank"><?php echo $data->content_file ?></a></td>
+					<td><?php echo $data->syntax ?></td>
+					<td><?php echo $data->example_code ?></td>
+					<td><?php echo $data->detailed_info ?></td>
+					<td><?php echo $data->Market_Demand ?></td>
+					<td><?php echo $data->Career_Opportunities ?></td>
+					<td><img src="upload/categories/<?php echo $data->img?>" width="50px"/></td>
+               
                     <td>
-                        <a href="/admin/course_content/edit/1" class="btn btn-warning btn-sm">Edit</a>
-                        <a href="/admin/course_content/delete/1" class="btn btn-danger btn-sm">Delete</a>
+					<a href="edit_content?editbtn=<?php echo $data->content_id?>" class="btn btn-primary">Edit</a>
+                        <a href="delete?del_content=<?php echo $data->content_id ?>" class="btn btn-warning btn-sm">delete</a>
+                     
                     </td>
                 </tr>
                 

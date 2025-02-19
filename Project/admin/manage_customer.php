@@ -56,7 +56,8 @@
                     
                     <td>
                         <a href="/admin/questions/edit/1" class="btn btn-warning btn-sm">Edit</a>
-                        <a href="/admin/questions/delete/1" class="btn btn-danger btn-sm">Delete</a>
+                        <a href="delete?del_customer=<?php echo $data->customer_id?>" class="btn btn-danger">Delete</a>
+						<a href="status?status_customer=<?php echo $data->customer_id?>" class="btn btn-success"><?php echo $data->status?></a>
                     </td>
                 </tr>
               

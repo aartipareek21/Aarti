@@ -363,6 +363,26 @@
                 <li><a href="add_interview_question"><i class="fa fa-circle-o"></i> Add Interview Questions</a></li>
                 <li><a href="manage_interview_question"><i class="fa fa-circle-o"></i> Manage Interview Questions</a></li>
               </ul>
+            </li>
+			<li>
+			<li class="treeview">
+              <a href="#">
+                <i class="fa fa-th"></i> <span>Carrer Paths</span> <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="add_career_paths"><i class="fa fa-circle-o"></i> Add career paths</a></li>
+                <li><a href="manage_career_paths"><i class="fa fa-circle-o"></i> Manage career paths</a></li>
+              </ul>
+            </li>  
+            <li>
+			<li class="treeview">
+              <a href="#">
+                <i class="fa fa-th"></i> <span>news_updates </span> <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="add_news_updates "><i class="fa fa-circle-o"></i> Add news_updates </a></li>
+                <li><a href="manage_news_updates "><i class="fa fa-circle-o"></i> Manage news_updates </a></li>
+              </ul>
             </li>  
             <li>
               <a href="manage_inquiry">

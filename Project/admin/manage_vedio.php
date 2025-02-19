@@ -47,8 +47,8 @@
                     <td><?php echo $data->video_title ?></td>
                     <td><a href="https://www.example.com/html_crash_course" target="_blank"><?php echo $data->video_url ?></a></td>
                     <td>
-                        <a href="/admin/videos/edit/1" class="btn btn-warning btn-sm">Edit</a>
-                        <a href="/admin/videos/delete/1" class="btn btn-danger btn-sm">Delete</a>
+                        <a href="edit_video?editbtn=<?php echo $data->video_id?>" class="btn btn-primary">Edit</a>
+                          <a href="delete?del_vedio=<?php echo $data->video_id ?>" class="btn btn-danger">Delete</a>
                     </td>
                 </tr>
                 

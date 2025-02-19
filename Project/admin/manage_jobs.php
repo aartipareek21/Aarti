@@ -49,8 +49,8 @@ include_once('header.php');
                     <td><?php echo $data->job_title ?></td>
                     <td><?php echo $data->job_description ?></td>
                     <td>
-                        <a href="/admin/jobs/edit/1" class="btn btn-warning btn-sm">Edit</a>
-                        <a href="/admin/jobs/delete/1" class="btn btn-danger btn-sm">Delete</a>
+                      <a href="edit_jobs?editbtn=<?php echo $data->job_id?>" class="btn btn-primary">Edit</a>                        
+						 <a href="delete?del_jobs=<?php echo $data->job_id ?>" class="btn btn-danger">Delete</a>
                     </td>
                 </tr>
                 <!-- Example row 2 -->

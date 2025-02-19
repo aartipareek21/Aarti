@@ -42,9 +42,11 @@ include_once('header.php');
                     <td><?php echo $data->course_name?></td>
                     <td><?php echo $data->category_id?></td>
                     <td><?php echo $data->description?></td>
+					<td><img src="upload/categories/<?php echo $data->img?>" width="50px"/></td>
                     <td>
-                        <a href="#" class="btn btn-info btn-sm">Edit</a>
-                        <a href="#" class="btn btn-danger btn-sm">Delete</a>
+					<a href="edit_courses?editbtn=<?php echo $data->course_id?>" class="btn btn-primary">Edit</a>
+                        <a href="delete?del_courses=<?php echo $data->course_id ?>" class="btn btn-danger">Delete</a>
+                       
                     </td>
                 </tr>
                 <?php 

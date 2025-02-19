@@ -1,5 +1,5 @@
 <?php
-    if(isset($_SESSION['customer_id']))
+    if(isset($_SESSION['userid']))
     {
         echo "<script>
             window.location='index';
@@ -30,94 +30,98 @@
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
-    <style type="text/css">
-         body {
-            background-color: #f8f9fa;
-        }
-        .login-container {
-            max-width: 400px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .login-container h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .form-control:focus {
-            border-color: #495057;
-            box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.25);
-        }
-        .submit-btn {
-            background-color: #495057;
-            color: #fff;
-        }
-        .submit-btn:hover {
-            background-color: #343a40;
-}
-    </style>
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .login-section {
+        background: url('signup_page.jpeg') no-repeat center center/cover; /* Add your background image */
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        color: white;
+        text-align: center;
+    }
+
+    .login-overlay {
+        background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .login-container {
+
+        /*padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        z-index: 2; /* Ensure it appears above the overlay */*/
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .login-container h2 {
+        color: #343a40;
+        margin-bottom: 20px;
+    }
+
+    .form-control:focus {
+        border-color: #495057;
+        box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.25);
+    }
+
+    .submit-btn {
+        background-color: #495057;
+        color: #fff;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .submit-btn:hover {
+        background-color: #343a40;
+    }
+</style>
+
    
 </head>
 
 <body>
-    <!-- Header Start -->
-    <div class="container-fluid"  style="margin-bottom: 90px;">
-        <div class="container">
-            <div class="d-flex flex-column justify-content-center" style="min-height: 300px">
-                <h3 class="display-4 text-white text-uppercase">Login</h3>
-                <div class="d-inline-flex text-white">
-                    <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
-                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                    <p class="m-0 text-uppercase">Login</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Header End -->
-
-
-    <!-- Contact Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="text-center mb-5">
-                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Login</h5>
-                <h1>Login For Furthor information</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="contact-form bg-secondary rounded p-5">
-                        <div id="success"></div>
-                       <form method="POST" action="">
+     <!-- Background Section Start -->
+    <div class="login-section">
+        <div class=""></div> <!-- Overlay effect -->
+        <div class="login-container">
+            <h2 class="text-Info">Login In To IT Knowledge Hub</h2>
+            <form method="POST" action="">
                 <div class="mb-3">
-                    <label for="email" class="form-label">Email address</label>
+                    <label for="email" class="form-label"></label>
                     <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
                 </div>
                 <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
+                    <label for="password" class="form-label"></label>
                     <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
                 </div>
-                <button type="submit" name="submit" class="btn submit-btn w-100">Login</button>
-
-							
-							<br>
-							<a href="signup.php">If you not registered Yet then Click Here</a>
-                        </form>
-                    </div>
+                <div class="mb-3">
+                    <a href="forgetpassword.php">Forget Password?</a>
                 </div>
-            </div>
+                <button type="submit" name="login" class="btn submit-btn btn-primary btn btn-info">Login</button>
+                <p class="mt-3"><a href="signup.php">If you are not registered yet, Click Here</a></p>
+            </form>
         </div>
     </div>
-    <!-- Contact End -->
-
-
-   <?php
-	include_once('footer.php');
-	?>
-
-     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Background Section End -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
+<?php
+    include_once('footer.php');
+    ?>
