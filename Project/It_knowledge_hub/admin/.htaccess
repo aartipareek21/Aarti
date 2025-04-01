@@ -1,0 +1,8 @@
+	RewriteEngine On
+	RewriteRule ^$ control.php/admin-login [L]
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+
+	RewriteCond %{REQUEST_FILENAME} !-d
+
+	RewriteRule ^(.*)$ control.php/$1 [L]
